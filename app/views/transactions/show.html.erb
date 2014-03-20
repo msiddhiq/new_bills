@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Spent for:</strong>
+  <%= @transaction.spent_for %>
+</p>
+
+<p>
+  <strong>Remarks:</strong>
+  <%= @transaction.remarks %>
+</p>
+
+<p>
+  <strong>Spent on:</strong>
+  <%= @transaction.spent_on %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @transaction.amount %>
+</p>
+
+<%= link_to 'Edit', edit_transaction_path(@transaction) %> |
+<%= link_to 'Back', transactions_path %>
